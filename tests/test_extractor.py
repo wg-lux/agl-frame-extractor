@@ -1,5 +1,5 @@
 import unittest
-from ..agl_frame_extractor.extractor import VideoFrameExtractor
+from agl_frame_extractor.extractor import VideoFrameExtractor
 
 class TestVideoFrameExtractor(unittest.TestCase):
     
