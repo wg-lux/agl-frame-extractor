@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "agl-frame-extractor"
+version = "0.1.0"
+description = "Extracts frames from .mov files"
+authors = ["Thomas J. Lux <lux_t1@ukw.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.8.0.76"
+tqdm = "^4.66.1"
+flake8 = "^6.1.0"
+pytest = "^7.4.2"
+
+[tool.poetry.dev-dependencies]
+opencv-python = "^4.8.0.76"
+tqdm = "^4.66.1"
+flake8 = "^6.1.0"
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
