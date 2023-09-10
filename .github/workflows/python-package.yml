@@ -15,10 +15,12 @@ jobs:
         python-version: [3.11]
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
         python-version: ${{ matrix.python-version }}
+
     - name: Install Poetry
       run: pip install poetry
     
@@ -28,6 +30,7 @@ jobs:
     - name: Add PYTHONPATH (Unix)
       if: runner.os != 'Windows'
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV   
+
     - name: Add PYTHONPATH (Windows)
       if: runner.os == 'Windows'
       run: echo "PYTHONPATH=${PYTHONPATH};${{ github.workspace }}" >> $env:GITHUB_ENV
@@ -35,8 +38,9 @@ jobs:
       
     - name: Lint with flake8
       run: |
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        poetry run flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
     - name: Test with pytest
       run: |
-        pytest
+        poetry run pytest
 
