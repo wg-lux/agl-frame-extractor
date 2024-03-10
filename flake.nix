@@ -22,8 +22,13 @@
             buildInputs = [ 
               pkgs.poetry
 
+              # stdenv.cc.cc.lib
+              # pam
+
               # Make venv (not very nixy but easy workaround to use current non-nix-packaged python module)
               pkgs.python3Packages.venvShellHook
+              pkgs.python3Packages.numpy
+              pkgs.python3Packages.opencv4
             ];
 
             # Define Environment Variables

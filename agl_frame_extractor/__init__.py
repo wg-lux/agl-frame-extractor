@@ -1,1 +1,1 @@
-from extractor import VideoFrameExtractor
+from agl_frame_extractor.extractor import VideoFrameExtractor

@@ -6,14 +6,11 @@ authors = ["Thomas J. Lux <lux_t1@ukw.de>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">3.11,<3.13"
-opencv-python = "^4.8.0.76"
+python = "^3.11"
 tqdm = "^4.66.1"
-flake8 = "^6.1.0"
-pytest = "^7.4.2"
+opencv-python = "^4.9.0.80"
 
 [tool.poetry.dev-dependencies]
-opencv-python = "^4.8.0.76"
 tqdm = "^4.66.1"
 flake8 = "^6.1.0"
 pytest = "^7.4.2"

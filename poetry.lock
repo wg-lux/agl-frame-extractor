@@ -206,5 +206,5 @@ telegram = ["requests"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = ">3.11,<3.13"
-content-hash = "47ac536acdaa7f9a0079fec02c42fc124f60ad47bbc80e18d37ca1ea2915f53b"
+python-versions = "^3.11"
+content-hash = "23e57924cd59d4d2521f484122bd04b5bc1a269aa96cb3c3ac031af88dcf9117"
