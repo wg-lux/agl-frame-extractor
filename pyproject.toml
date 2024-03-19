@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "agl-frame-extractor"
-version = "0.1.1"
+version = "0.2.0"
 description = "Extracts frames from .mov files"
 authors = ["Thomas J. Lux <lux_t1@ukw.de>"]
 readme = "README.md"
