@@ -1,4 +1,6 @@
 .direnv/
+.devenv/
+.devenv.flake.nix
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
