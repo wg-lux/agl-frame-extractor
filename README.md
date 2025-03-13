@@ -1,4 +1,5 @@
 # agl-frame-extractor
+
 ## Description
 
 `agl_frame_extractor` is a Python package designed to extract individual frames and metadata from .MOV video files. This package is highly useful for researchers and clinicians who require frame-by-frame analysis of video data. With applications ranging from medical research to training simulations, the package aims to improve standards and classifications in gastrointestinal endoscopy by enhancing objectivity and reproducibility.
@@ -55,7 +56,7 @@ extractor.extract_frames_and_metadata()
 
 ## Dependencies
 
-- OpenCV
+- opencv
 - tqdm
 
 ## Logging
@@ -65,4 +66,3 @@ The package generates a log file `video_frame_extraction.log` in the directory w
 ## Contributing
 
 We welcome contributions to improve this package. Please follow the standard GitHub pull request process. Make sure to document your code thoroughly, keeping in mind that the package targets an academic audience focused on research.
-
